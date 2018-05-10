@@ -1,0 +1,62 @@
+body {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+input {
+  border: 0;
+  text-align: center;
+  cursor: pointer;
+}
+
+@media (min-width: 576px) {
+  .datepicker-container--inline {
+    position: absolute;
+    width: calc(100% - 30px);
+  }
+}
+
+html {
+  font-size: 1.05rem;
+}
+
+.price {
+  cursor: default;
+  font-size: calc(3.9em + 2.3vw);
+
+  &__currency {
+    color: #555;
+  }
+
+  &__value {
+
+  }
+}
+
+input {
+  background-color: transparent;
+}
+
+.dark-theme {
+  background-color: #232323;
+
+  .app-settings-group-icon {
+    filter: invert(100%);
+    -webkit-filter: invert(100%);
+    -ms-filter: invert(100%);
+  }
+
+  .price-holder {
+    color: #fff;
+
+    .price {
+      color: #fff;
+      &__currency {
+        color: #bbb;
+      }
+    }
+  }
+
+  input {
+    color: #fff;
+  }
+}
